@@ -1,4 +1,19 @@
-export default function Home() {
-  const heading = "Laravel 9 Vite with React JS";
-  return <div className='HELP'><h1> {heading}</h1></div>
+import React from 'react'
+import NotesList from '../js/components/NotesList'
+import Header from '../js/components/Header';
+import Content from '../js/components/Content';
+
+function Home() {
+  return (
+    <>
+      <div className="container" id="app">
+        <Header />
+        <Content />
+        <NotesList />
+      </div>
+      
+    </>
+  )
 }
+
+export default Home
